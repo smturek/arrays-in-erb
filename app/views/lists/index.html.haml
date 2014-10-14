@@ -1,0 +1,12 @@
+%h2 Cities and States
+
+- cities_and_states = [["Colorado",["Denver", "Boulder", "Parker"]], ["Montana",["Billings", "West Yellowstone"]], ["Alaska",["Whittier", "Homer", "Seward", "Anchorage"]]]
+
+%ul
+  - cities_and_states.each do |state|
+    %li
+      = state[0]
+      %ul
+        - state[1].each do |city|
+          %li
+            = city
